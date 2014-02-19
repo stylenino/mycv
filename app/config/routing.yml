@@ -1,0 +1,12 @@
+cv_users:
+    resource: "@CvUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+cv_back:
+    resource: "@CvBackBundle/Resources/config/routing.yml"
+    prefix:   /
+
+cv_front:
+    resource: "@CvFrontBundle/Resources/config/routing.yml"
+    prefix:   /
+

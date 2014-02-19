@@ -1,0 +1,4 @@
+_front_homepage:
+    resource: "@CvFrontBundle/Controller/DefaultController.php"
+    type:     annotation
+

@@ -1,0 +1,7 @@
+parameters:
+#    cv_users.example.class: Cv\UsersBundle\Example
+
+services:
+#    cv_users.example:
+#        class: %cv_users.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

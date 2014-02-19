@@ -1,0 +1,67 @@
+security:
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext
+
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: [ROLE_USER, ROLE_ADMIN, ROLE_ALLOWED_TO_SWITCH]
+
+    firewalls:
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        login:
+            pattern:  ^/user/login$
+            anonymous: ~
+
+        secured_area:
+            pattern:    ^/user
+            form_login:
+                check_path:  _user_security_check
+                login_path:  _user_login
+#                use_forward: true
+
+                # Les options de redirection en cas de succès de connexion (lire plus bas)
+                always_use_default_target_path: true
+                default_target_path:            /user/me
+                target_path_parameter:          _target_path
+#                use_referer:                    true
+
+                # Les options de redirection en cas d'échec de connexion (lire plus bas)
+                failure_path:    /user/fail
+                failure_forward: false
+
+                # le nom des champs username et password
+                username_parameter: _username
+                password_parameter: _password
+
+                # par défautt, le formulaire de connextion *doit* être de type POST et non GET
+                post_only:      true
+                remember_me:    false
+
+            logout:
+                path:   _user_logout
+                target: /user/login
+
+        admin_secured_area:
+            pattern:    ^/admin
+            form_login:
+                check_path:  _user_security_check
+                login_path:  _user_login
+
+                # par défautt, le formulaire de connextion *doit* être de type POST et non GET
+                post_only:      true
+
+    providers:
+        in_memory:
+            memory:
+                users:
+                    user:  { password: userpass, roles: [ 'ROLE_USER' ] }
+                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
+
+    access_control:
+        - { path: ^/admin, roles: ROLE_ADMIN, requires_channel: https}
+        - { path: ^/user/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+#        - { path: ^/user/logout, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+

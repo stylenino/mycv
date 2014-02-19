@@ -1,0 +1,3 @@
+_user_secured:
+    resource: "@CvUserBundle/Controller/SecuredController.php"
+    type:     annotation

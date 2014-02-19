@@ -1,0 +1,9 @@
+#cv_back_homepage:
+#    resource: "@CvBackBundle/Controller/DefaultController.php"
+#    type:     annotation
+
+_back_secured:
+    resource: "@CvBackBundle/Controller/SecuredController.php"
+    type:     annotation
+
+

@@ -1,0 +1,7 @@
+parameters:
+#    cv_back.example.class: Cv\BackBundle\Example
+
+services:
+#    cv_back.example:
+#        class: %cv_back.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
