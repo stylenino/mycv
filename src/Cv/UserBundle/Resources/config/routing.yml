@@ -1,3 +1,6 @@
 _user_secured:
     resource: "@CvUserBundle/Controller/SecuredController.php"
     type:     annotation
+_user_admin:
+    resource: "@CvUserBundle/Controller/UserController.php"
+    type:     annotation

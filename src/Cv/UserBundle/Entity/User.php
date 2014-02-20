@@ -6,12 +6,12 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * User
+ * Cv\UserBundle\Entity\User
  *
- * @ORM\Table()
+ * @ORM\Table(name="users")
  * @ORM\Entity(repositoryClass="Cv\UserBundle\Entity\UserRepository")
  */
-class User
+class User implements AdvancedUserInterface, \Serializable
 {
     /**
      * @var integer
@@ -32,14 +32,14 @@ class User
     /**
      * @var string
      *
-     * @ORM\Column(name="salt", type="string", length=40)
+     * @ORM\Column(name="salt", type="string", length=32)
      */
     private $salt;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="password", type="string", length=60)
+     * @ORM\Column(name="password", type="string", length=40)
      */
     private $password;
 
@@ -57,6 +57,11 @@ class User
      */
     private $isActive;
 
+    public function __construct()
+    {
+      $this->isActive = true;
+      $this->salt = md5(uniqid(null, true));
+    }
 
     /**
      * Get id
@@ -160,26 +165,75 @@ class User
         return $this->email;
     }
 
-    /**
-     * Set isActive
-     *
-     * @param boolean $isActive
-     * @return User
-     */
     public function setIsActive($isActive)
     {
-        $this->isActive = $isActive;
+      $this->isActive = $isActive;
 
-        return $this;
+      return $this;
     }
 
     /**
      * Get isActive
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getIsActive()
     {
-        return $this->isActive;
+      return $this->isActive;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function getRoles()
+    {
+      return array('ROLE_USER');
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function eraseCredentials()
+    {
+    }
+
+    /**
+     * @see \Serializable::serialize()
+     */
+    public function serialize()
+    {
+      return serialize(array(
+        $this->id,
+      ));
+    }
+
+    /**
+     * @see \Serializable::unserialize()
+     */
+    public function unserialize($serialized)
+    {
+      list (
+        $this->id,
+        ) = unserialize($serialized);
+    }
+
+    public function isAccountNonExpired()
+    {
+      return true;
+    }
+
+    public function isAccountNonLocked()
+    {
+      return true;
+    }
+
+    public function isCredentialsNonExpired()
+    {
+      return true;
+    }
+
+    public function isEnabled()
+    {
+      return $this->isActive;
     }
 }
