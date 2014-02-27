@@ -23,17 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AppKernel.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="5" selection-start="1317" selection-end="1317" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="660">
-              <folding>
-                <element signature="e#7#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,40 +32,67 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="security.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <file leaf-file-name="Group.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Entity/Group.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="56" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="1200">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserControllerTest.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Tests/Controller/UserControllerTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRepository.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Entity/UserRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="39" selection-start="242" selection-end="242" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="315">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Entity/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="5" selection-start="3590" selection-end="3590" vertical-scroll-proportion="0.68204486" vertical-offset="2783" max-vertical-offset="3675">
+            <state line="32" column="0" selection-start="629" selection-end="629" vertical-scroll-proportion="-5.0" vertical-offset="360" max-vertical-offset="1545">
               <folding>
-                <element signature="e#40#72#0" expanded="true" />
+                <element signature="e#40#95#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="45" selection-start="259" selection-end="259" vertical-scroll-proportion="0.12711865" vertical-offset="0" max-vertical-offset="826">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/new.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="36" selection-start="183" selection-end="183" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="315">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/show.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="36" selection-start="907" selection-end="907" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="645">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="48" selection-start="519" selection-end="519" vertical-scroll-proportion="-11.541667" vertical-offset="23" max-vertical-offset="825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/edit.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="36" selection-start="280" selection-end="280" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="330">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,26 +100,21 @@
       <file leaf-file-name="UserController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="43" selection-start="3380" selection-end="3380" vertical-scroll-proportion="-80.625" vertical-offset="0" max-vertical-offset="3705">
-              <folding />
+            <state line="83" column="7" selection-start="2111" selection-end="2111" vertical-scroll-proportion="-6.6904764" vertical-offset="683" max-vertical-offset="3795">
+              <folding>
+                <element signature="e#44#89#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/config/routing.yml">
+      <file leaf-file-name="GroupController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Controller/GroupController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="45" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/Secured/login.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="32" selection-start="389" selection-end="389" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="600">
-              <folding />
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3795">
+              <folding>
+                <element signature="e#44#89#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,22 +129,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Cv/UsersBundle/Resources/views/Secured/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/Cv/UsersBundle/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/Cv/BackBundle/Resources/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/Cv/UserBundle/CvUserBundle.php" />
-        <option value="$PROJECT_DIR$/src/Cv/UserBundle/Tests/Controller/SecuredControllerTest.php" />
-        <option value="$PROJECT_DIR$/src/Cv/UserBundle/Tests/Controller/DefaultControllerTest.php" />
         <option value="$PROJECT_DIR$/src/Cv/UserBundle/DependencyInjection/CvUserExtension.php" />
         <option value="$PROJECT_DIR$/src/Cv/UserBundle/DependencyInjection/Configuration.php" />
         <option value="$PROJECT_DIR$/src/Cv/UserBundle/Controller/SecuredController.php" />
         <option value="$PROJECT_DIR$/src/Cv/UserBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/Secured/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/Cv/UserBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/src/Cv/UserBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/Cv/UserBundle/Entity/Group.php" />
+        <option value="$PROJECT_DIR$/src/Cv/UserBundle/Entity/UserRepository.php" />
+        <option value="$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Cv/UserBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/src/Cv/UserBundle/Resources/config/routing.yml" />
       </list>
     </option>
   </component>
@@ -170,7 +181,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -509,36 +519,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mokrane.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mokrane.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -577,7 +557,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="User" />
+              <option name="myItemId" value="Group" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -604,104 +584,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Secured" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mokrane.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mokrane.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="translations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mokrane.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mokrane.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mokrane.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mokrane.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -784,32 +666,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mokrane.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mokrane.local" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DependencyInjection" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -927,11 +783,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../smart-project.local" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
@@ -969,7 +826,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24940476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24940476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -997,97 +854,60 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/CvUserBundle.php">
+    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/DependencyInjection/CvUserExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="94" selection-end="94" vertical-scroll-proportion="0.10843374" vertical-offset="0" max-vertical-offset="830">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="48" selection-start="2343" selection-end="2343" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="854">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="854">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="67" selection-start="7560" selection-end="7560" vertical-scroll-proportion="0.6047382" vertical-offset="2770" max-vertical-offset="4335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="1317" selection-end="1317" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="660">
+        <state line="21" column="0" selection-start="1029" selection-end="1029" vertical-scroll-proportion="0.08977556" vertical-offset="3" max-vertical-offset="5625">
           <folding>
-            <element signature="e#7#47#0" expanded="true" />
+            <element signature="e#1029#1056#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Entity/UserRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="39" selection-start="242" selection-end="242" vertical-scroll-proportion="-7.5" vertical-offset="0" max-vertical-offset="315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="45" selection-start="161" selection-end="161" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/Secured/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="389" selection-end="389" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Tests/Controller/UserControllerTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cv/BackBundle/Resources/views/Secured/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="266" selection-end="266" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="600">
+        <state line="29" column="7" selection-start="644" selection-end="644" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="3810">
           <folding>
-            <marker date="1392742798232" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392742798232" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392742798232" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392742798232" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392742798232" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392742798232" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1392742798232" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#40#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Form/UserType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="826">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="802">
+          <folding>
+            <element signature="e#38#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/DependencyInjection/CvUserExtension.php">
+    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Entity/UserRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="826">
-          <folding />
+        <state line="50" column="10" selection-start="1625" selection-end="1625" vertical-scroll-proportion="-31.25" vertical-offset="0" max-vertical-offset="1005">
+          <folding>
+            <element signature="e#40#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Entity/Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="629" selection-end="629" vertical-scroll-proportion="-5.0" vertical-offset="360" max-vertical-offset="1545">
+          <folding>
+            <element signature="e#40#95#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1098,26 +918,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="56" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="1200">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="826">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="48" selection-start="519" selection-end="519" vertical-scroll-proportion="-11.541667" vertical-offset="23" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="36" selection-start="280" selection-end="280" vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="36" selection-start="183" selection-end="183" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/views/User/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="36" selection-start="907" selection-end="907" vertical-scroll-proportion="-22.5" vertical-offset="0" max-vertical-offset="810">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="43" selection-start="3380" selection-end="3380" vertical-scroll-proportion="-80.625" vertical-offset="0" max-vertical-offset="3705">
-          <folding />
+        <state line="83" column="7" selection-start="2111" selection-end="2111" vertical-scroll-proportion="-6.6904764" vertical-offset="683" max-vertical-offset="3795">
+          <folding>
+            <element signature="e#44#89#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Entity/User.php">
+    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Controller/GroupController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="5" selection-start="3590" selection-end="3590" vertical-scroll-proportion="0.68204486" vertical-offset="2783" max-vertical-offset="3675">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="3795">
           <folding>
-            <element signature="e#40#72#0" expanded="true" />
+            <element signature="e#44#89#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cv/UserBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="45" selection-start="259" selection-end="259" vertical-scroll-proportion="0.12711865" vertical-offset="0" max-vertical-offset="826">
+          <folding />
         </state>
       </provider>
     </entry>

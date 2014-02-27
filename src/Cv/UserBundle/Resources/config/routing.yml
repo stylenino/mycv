@@ -4,3 +4,6 @@ _user_secured:
 _user_admin:
     resource: "@CvUserBundle/Controller/UserController.php"
     type:     annotation
+_role_admin:
+    resource: "@CvUserBundle/Controller/GroupController.php"
+    type:     annotation

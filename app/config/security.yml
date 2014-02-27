@@ -65,7 +65,7 @@ security:
 #                    user:  { password: userpass, roles: [ 'ROLE_USER' ] }
 #                    admin: { password: adminpass, roles: [ 'ROLE_ADMIN' ] }
           administrators:
-              entity: { class: CvUserBundle:User, property: username }
+              entity: { class: CvUserBundle:User }
 
     access_control:
 #        - { path: ^/admin, roles: ROLE_ADMIN, requires_channel: https}

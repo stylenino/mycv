@@ -3,7 +3,8 @@
 namespace Cv\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\User\AdvancedUserInterface;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Cv\UserBundle\Entity\User
@@ -13,6 +14,13 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 class User implements AdvancedUserInterface, \Serializable
 {
+    /**
+     * @ORM\ManyToMany(targetEntity="Group", inversedBy="users")
+     *
+     */
+    private $groups;
+
+
     /**
      * @var integer
      *
@@ -61,6 +69,7 @@ class User implements AdvancedUserInterface, \Serializable
     {
       $this->isActive = true;
       $this->salt = md5(uniqid(null, true));
+      $this->groups = new ArrayCollection();
     }
 
     /**
@@ -183,11 +192,11 @@ class User implements AdvancedUserInterface, \Serializable
     }
 
     /**
-     * @inheritDoc
+     * @return array
      */
     public function getRoles()
     {
-      return array('ROLE_USER');
+      return $this->groups->toArray();
     }
 
     /**
