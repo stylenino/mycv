@@ -13,7 +13,7 @@ use Cv\UserBundle\Form\GroupType;
 /**
  * Group controller.
  *
- * @Route("/admin/role")
+ * @Route("/admin/group")
  */
 class GroupController extends Controller
 {
@@ -21,7 +21,7 @@ class GroupController extends Controller
     /**
      * Lists all Group entities.
      *
-     * @Route("/", name="admin_role")
+     * @Route("/", name="admin_group")
      * @Method("GET")
      * @Template()
      */
@@ -38,7 +38,7 @@ class GroupController extends Controller
     /**
      * Creates a new Group entity.
      *
-     * @Route("/", name="admin_role_create")
+     * @Route("/", name="admin_group_create")
      * @Method("POST")
      * @Template("CvUserBundle:Group:new.html.twig")
      */
@@ -53,7 +53,7 @@ class GroupController extends Controller
             $em->persist($entity);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('admin_role_show', array('id' => $entity->getId())));
+            return $this->redirect($this->generateUrl('admin_group_show', array('id' => $entity->getId())));
         }
 
         return array(
@@ -72,7 +72,7 @@ class GroupController extends Controller
     private function createCreateForm(Group $entity)
     {
         $form = $this->createForm(new GroupType(), $entity, array(
-            'action' => $this->generateUrl('admin_role_create'),
+            'action' => $this->generateUrl('admin_group_create'),
             'method' => 'POST',
         ));
 
@@ -84,7 +84,7 @@ class GroupController extends Controller
     /**
      * Displays a form to create a new Group entity.
      *
-     * @Route("/new", name="admin_role_new")
+     * @Route("/new", name="admin_group_new")
      * @Method("GET")
      * @Template()
      */
@@ -102,7 +102,7 @@ class GroupController extends Controller
     /**
      * Finds and displays a Group entity.
      *
-     * @Route("/{id}", name="admin_role_show")
+     * @Route("/{id}", name="admin_group_show")
      * @Method("GET")
      * @Template()
      */
@@ -127,7 +127,7 @@ class GroupController extends Controller
     /**
      * Displays a form to edit an existing Group entity.
      *
-     * @Route("/{id}/edit", name="admin_role_edit")
+     * @Route("/{id}/edit", name="admin_group_edit")
      * @Method("GET")
      * @Template()
      */
@@ -161,7 +161,7 @@ class GroupController extends Controller
     private function createEditForm(Group $entity)
     {
         $form = $this->createForm(new GroupType(), $entity, array(
-            'action' => $this->generateUrl('admin_role_update', array('id' => $entity->getId())),
+            'action' => $this->generateUrl('admin_group_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
 
@@ -172,7 +172,7 @@ class GroupController extends Controller
     /**
      * Edits an existing Group entity.
      *
-     * @Route("/{id}", name="admin_role_update")
+     * @Route("/{id}", name="admin_group_update")
      * @Method("PUT")
      * @Template("CvUserBundle:Group:edit.html.twig")
      */
@@ -193,7 +193,7 @@ class GroupController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            return $this->redirect($this->generateUrl('admin_role_edit', array('id' => $id)));
+            return $this->redirect($this->generateUrl('admin_group_edit', array('id' => $id)));
         }
 
         return array(
@@ -205,7 +205,7 @@ class GroupController extends Controller
     /**
      * Deletes a Group entity.
      *
-     * @Route("/{id}", name="admin_role_delete")
+     * @Route("/{id}", name="admin_group_delete")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, $id)
@@ -225,7 +225,7 @@ class GroupController extends Controller
             $em->flush();
         }
 
-        return $this->redirect($this->generateUrl('admin_role'));
+        return $this->redirect($this->generateUrl('admin_group'));
     }
 
     /**
@@ -238,7 +238,7 @@ class GroupController extends Controller
     private function createDeleteForm($id)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('admin_role_delete', array('id' => $id)))
+            ->setAction($this->generateUrl('admin_group_delete', array('id' => $id)))
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Delete'))
             ->getForm()

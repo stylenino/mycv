@@ -2,13 +2,17 @@
 
 namespace Cv\UserBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\Role\RoleInterface;
 use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\ORM\Mapping as ORM;
+
 
 /**
+ * Cv\UserBundle\Entity\Group
+ *
  * @ORM\Table(name="groups")
- * @ORM\Entity()
+ * @ORM\Entity(repositoryClass="Cv\UserBundle\Entity\GroupRepository")
+ *
  */
 class Group implements RoleInterface
 {
@@ -41,6 +45,11 @@ class Group implements RoleInterface
       $this->users = new ArrayCollection();
     }
 
+    public function getRoleName()
+    {
+      return $this->role . ' : ' . $this->name;
+    }
+
     /**
      * Get id
      *
@@ -55,7 +64,7 @@ class Group implements RoleInterface
      * Set name
      *
      * @param string $name
-     * @return Groupe
+     * @return Group
      */
     public function setName($name)
     {
@@ -78,20 +87,55 @@ class Group implements RoleInterface
      * Set role
      *
      * @param string $role
-     * @return Groupe
+     * @return Group
      */
     public function setRole($role)
     {
         $this->role = $role;
 
-        return $this;
+        return  $this->role;
     }
 
     /**
-     * @see RoleInterface
+     * @param $role
+     *
+     * @return string
      */
     public function getRole()
     {
-        return $this->role;
+      return $this->role;
+    }
+
+    /**
+     * Add users
+     *
+     * @param \Cv\UserBundle\Entity\User $users
+     * @return Group
+     */
+    public function addUser(\Cv\UserBundle\Entity\User $users)
+    {
+        $this->users[] = $users;
+
+        return $this->users;
+    }
+
+    /**
+     * Remove users
+     *
+     * @param \Cv\UserBundle\Entity\User $users
+     */
+    public function removeUser(\Cv\UserBundle\Entity\User $users)
+    {
+        $this->users->removeElement($users);
+    }
+
+    /**
+     * Get users
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getUsers()
+    {
+        return $this->users;
     }
 }

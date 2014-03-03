@@ -20,6 +20,7 @@ class UserType extends AbstractType
             ->add('password')
             ->add('email')
             ->add('isActive')
+            ->add('groups', null, array('property' => 'roleName'))
         ;
     }
     
